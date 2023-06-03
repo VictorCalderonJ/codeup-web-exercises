@@ -17,7 +17,6 @@
 //  *
 
 let helloMessage = sayHello("Victor")
-
 console.log(helloMessage)
 
 // /**
@@ -43,9 +42,10 @@ let random = Math.floor((Math.random() * 3) + 1);
 //  * number is the number 2.
 //  *
 function isTwo(Two) {
-    return 2
+    return Two ===  2
 }
-console.log(random === isTwo())
+
+console.log(`the random number ${random} is `);
 
 // let isItTwo =  parseInt(prompt( 'Any number other than 2 will result false:'))
 // console.log('The user entered: ' + isTwo());
@@ -66,9 +66,9 @@ console.log(random === isTwo())
 // //  * number)
 // //  */
 
-console.log(isTwo(1) === 2)
-console.log(isTwo(2) === 2)
-console.log(isTwo(3) === 2)
+console.log(isTwo(1));
+console.log(isTwo(2));
+console.log(isTwo(3));
 
 // /**
 //  * TODO:
@@ -114,10 +114,7 @@ alert(`Your total amount is: ${CalculateTip = TotalBill * Percentage}`)
 //  * price.
 
 function applyDiscount(originalPrice, discountPercent) {
-    return originalPrice - (discountPercent * 100)
-}
-function applyDiscountPercentage(originalPrice, discountPercent) {
-    return originalPrice - (((discountPercent / 100) * originalPrice) * 100)
+    return originalPrice * (1 - discountPercent)
 }
 
 //  * Example:
@@ -127,4 +124,4 @@ function applyDiscountPercentage(originalPrice, discountPercent) {
 console.log(applyDiscount(100, .2 ));
 
 //  * > applyDiscount(45.99, 0.12) // 40.4712
-console.log(applyDiscountPercentage(45.99, 0.12))
+console.log(applyDiscount(45.99, 0.12))
