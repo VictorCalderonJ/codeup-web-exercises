@@ -83,22 +83,26 @@
 //      console.log(`Value of y: ${y}`);
 //}
 
-function greet(name) {
-
-    if (name === "Johnny") {
-        return `Hello, my love!`;
-    } else {
-        return `Hello, ${name}!`
-    }
-
-}
-console.log(greet('victor'))
-console.log(greet('calderon'))
-console.log(greet('Johnny'))
-console.log(greet('Sam'))
+// function greet(name) {
+//
+//     if (name === "Johnny") {
+//         return `Hello, my love!`;
+//     } else {
+//         return `Hello, ${name}!`
+//     }
+//
+// }
+// console.log(greet('victor'))
+// console.log(greet('calderon'))
+// console.log(greet('Johnny'))
+// console.log(greet('Sam'))
 // function greet(name){
 //     return "Hello, " + name + "!";
 //
 //     if(name === "Johnny") {
 //         return "Hello, my love!";
-//     }
+// }
+
+
+
+
