@@ -25,6 +25,42 @@
 // }
 //
 // console.log(showMultiplicationTable(7))
+//
+// In this kata you are required to, given a string, replace every letter with its position in the alphabet.
+// If anything in the text isn't a letter, ignore it and don't return it.
+
+// "a" = 1, "b" = 2, etc.
+function alphabetPosition() {
+    let a = 1;
+    let  b = 2;
+    let  c = 3;
+    let  d = `d`;
+    let  e = `e`;
+    let  f = `f`;
+    let  g = `g`;
+    let  h = `h`;
+    let  i = `i`;
+    let  j = `j`;
+    let  k = `k`;
+    let  l = `l`;
+    let  m = `m`;
+    let  n = `n`;
+    let  o = `o`;
+    let  p = `p`;
+    let  q = `q`;
+    let  r = `r`;
+    let  s = `s`;
+    let  t = `t`;
+    let  u= `u`;
+    let v = `v`
+    let  w = `w`;
+    let  x = `x`;
+    let  y = `y`;
+    let  z = `z`;
+return a, b, c
+
+}
+
 
 
 
@@ -71,23 +107,23 @@
 // }
 
 
-function getRandomIntInclusive(min = 20, max = 200) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1) + min); // The maximum is inclusive and the minimum is inclusive
-}
-
-function EvenOrOdd() {
-
-    if (getRandomIntInclusive() % 2 === 0) {
-        return `is even`
-    } else {
-        return `is odd`
-    }
-}
-
-
-console.log(getRandomIntInclusive(), EvenOrOdd(getRandomIntInclusive()))
+// function getRandomIntInclusive(min = 20, max = 200) {
+//     min = Math.ceil(min);
+//     max = Math.floor(max);
+//     return Math.floor(Math.random() * (max - min + 1) + min); // The maximum is inclusive and the minimum is inclusive
+// }
+//
+// function EvenOrOdd() {
+//
+//     if (getRandomIntInclusive() % 2 === 0) {
+//         return `is even`
+//     } else {
+//         return `is odd`
+//     }
+// }
+//
+//
+// console.log(getRandomIntInclusive(), EvenOrOdd(getRandomIntInclusive()))
 
 
 

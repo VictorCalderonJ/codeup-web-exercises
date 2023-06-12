@@ -101,8 +101,77 @@
 //
 //     if(name === "Johnny") {
 //         return "Hello, my love!";
+// // }
+//
+//
+// const cars = [
+//     {
+//         make: "Toyota",
+//         model: "Camry",
+//         features: ["Automatic Windows", "Bluetooth Connectivity", "GPS Navigation"],
+//         owner: {
+//             name: "Jane Doe",
+//             age: 30,
+//             sayMyName: function (){
+//                 console.log(`${this.name} said hi`)
+//             }
+//         },
+//         honk: function (){
+//             console.log(`${this.model} honked..`)
+//         }
+//     },
+//     {
+//         make: "Honda",
+//         model: "Accord",
+//         features: ["Automatic Windows", "Great Gas Mileage", "AM/FM Radio"],
+//         owner: {
+//             name: "John Doe",
+//             age: 31
+//         },
+//         honk: function (){
+//             console.log(`${this.model} honked..`)
+//         }
+//     }
+// ]
+// console.log(cars[0])
+
+// var helloWorld=_=>/Hello, World!/.source
+
+
+// function helloWorld() {
+//     return /Hello, World!/.source
 // }
+//
+// console.log(helloWorld())
+
+// Write a function, sumIsEqual, that takes in three inputs.
+// The function should return true if the sum of the first two inputs are equal to the third input.
+// If any of the inputs are not numbers, return false.
+//
+
+
+function sumIsEqual(x, y, z){
+    if(x + y == z) {
+        return true
+    } else {
+        return false
+    }
+}
+
+console.log(sumIsEqual(1, 2, 3), true); // returns true
+console.log(sumIsEqual(2, 2, 4), true); // returns true
+console.log(sumIsEqual(10, 2, 12), true); // returns true
+console.log(sumIsEqual(10, false, 12), false); // returns false
+console.log(sumIsEqual('10', '2', 12), false); // returns false
+console.log(sumIsEqual('fred', 'bob', 'hello'), false); // returns false
 
 
 
+const xvalue= parseInt(prompt(`what is the value of x?`))
+console.log(`the user input ${xvalue}`)
+const yvalue = parseInt(prompt(`what is the value of y?`))
+console.log(`the user input ${yvalue}`)
+const zvalue = parseInt(prompt(`what is the value of z`))
+console.log(`The user input ${zvalue}`)
 
+console.log(sumIsEqual(xvalue, yvalue, zvalue))

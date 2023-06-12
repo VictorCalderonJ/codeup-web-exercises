@@ -12,6 +12,15 @@
      *  > console.log(person.lastName) // "Sanchez"
      */
 
+    const person = {
+        firstName: "Victor",
+        lastName: "Calderon",
+        sayHello() {
+            return `Hello from ${this.firstName} ${this.lastName}!`;
+        }
+    };
+    console.log(person.firstName)
+    console.log(person.lastName)
     /**
      * TODO:
      * Add a sayHello method to the person object that returns a greeting using
@@ -21,6 +30,8 @@
      * Example
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
+
+    console.log(person.sayHello())
 
     /** TODO:
      * HEB has an offer for the shoppers that buy products amounting to
@@ -36,11 +47,29 @@
      * and console.log the relevant messages for each person
      */
 
-    // var shoppers = [
-    //     {name: 'Cameron', amount: 180},
-    //     {name: 'Ryan', amount: 250},
-    //     {name: 'George', amount: 320}
-    // ];
+    const shoppers = [
+        {name: 'Cameron', amount: 180},
+        {name: 'Ryan', amount: 250},
+        {name: 'George', amount: 320}
+    ];
+
+function TotalDue(y) {
+let total1
+
+    if (y >= 200.00){
+        return total1 = `since your amount is over 200 you get a 20% discount, your total amount is: \n $${y * .88}`;
+    } else {
+        return `You're not qualified for a discount.`;
+    }
+}
+
+    const test1 = TotalDue(shoppers[0].amount);
+    const test2 = TotalDue(shoppers[1].amount);
+    const test3 = TotalDue(shoppers[2].amount);
+
+    console.log(`${shoppers[0].name}, ${test1}`);
+    console.log(`${shoppers[1].name}, ${test2}`);
+    console.log(`${shoppers[2].name}, ${test3}`);
 
     /** TODO:
      * Create an array of objects that represent books and store it in a
@@ -54,6 +83,20 @@
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
+
+const books = [
+        {
+            title: "The Salmon of Doubt",
+            author: {
+                firstName: "Douglas",
+                lastName: "Adams",
+            }
+        }
+]
+
+        console.log(books[0].title) // "The Salmon of Doubt"
+        console.log(books[0].author.firstName) // "Douglas"
+        console.log(books[0].author.lastName) // "Adams"
 
     /**
      * TODO:
@@ -79,6 +122,30 @@
      *      ---
      *      ...
      */
+
+    const Book = [
+    {
+        Book: `#1`,
+        Tittle: "Walkaway",
+        Author: "Douglas Adams",
+    },
+        {
+            Book: `#2`,
+            Tittle: "The Salmon of Doubt",
+            Author: "Cory Doctorow",
+        },
+
+        {
+            Book: `#3`,
+            Tittle: "A Brief History of Time",
+            Author: "Cory Doctorow",
+        }
+]
+
+    console.log(`Book #1 \n\ Title: ${Book[0].Tittle} \n\ Author: ${Book[0].Author}`)
+
+
+
 
     /**
      * Bonus:
