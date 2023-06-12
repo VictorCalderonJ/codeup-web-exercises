@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register With Us</title>
+</head>
+<body>
+        <section>
+            <form method="POST" action="https://request-inspector.glitch.me/">
+            <label for="username">Username:</label>
+            <input id="username" name="username" type="text" placeholder="Enter Username">
+            <br>
+            <label for="password">Password:</label>
+            <input id="password" name="password" type="password" placeholder="Enter Password">
+            <br>
+            </form>
+        </section>
+        <p></p>
+    <section>
+        <div>Bio:</div>
+        <label>
+            <textarea name="bio" placeholder="fill out a short description of yourself :)" cols="10" rows="5"></textarea>
+        </label>
+    </section>
+        <p></p>
+    <section>
+        <div style="background-color:lightblue;padding:20px;">
+        <fieldset>
+            <legend>How did you hear about us?</legend>
+            <label>
+                <input type="radio" name="quiz_question_1" value="a">
+            </label>billboard<br>
+            <label>
+                <input type="radio" name="quiz_question_1" value="b">
+            </label>radio advertisement<br>
+            <label>
+                <input type="radio" name="quiz_question_1" value="c">
+            </label>internet advertisement<br>
+            <label>
+                <input type="radio" name="quiz_question_1" value="d">
+            </label>Other<br>
+        </fieldset>
+<!--- If the inputs are given different names it will allow the user to select multiple answers --->
+        <fieldset>
+            <legend><p>How did you hear about us?</p></legend>
+            <p>Multiple choices are allowed <br></p>
+            <label>
+                <input type="radio" name="quiz_question_0" value="a">
+            </label>billboard<br>
+            <label>
+                <input type="radio" name="quiz_question_2" value="b">
+            </label>radio advertisement<br>
+            <label>
+                <input type="radio" name="quiz_question_3" value="c">
+            </label>internet advertisement<br>
+            <label>
+                <input type="radio" name="quiz_question_4" value="d">
+            </label>Other<br>
+        </fieldset>
+        </div>
+    </section>
+        <p></p>
+        <section>
+            <div> What web browser are using?<br></div>
+            <label>
+                <select name="coffee_preference">
+                    <option value="light">Google Chrome</option>
+                    <option value="dark">Safari</option>
+                    <option value="espresso">Other</option>
+            </select>
+            </label>
+        </section>
+    <p></p>
+    <input type="submit">
+</body>
+</html>
