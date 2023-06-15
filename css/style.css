@@ -79,6 +79,14 @@
 /*    animation: buttonPulse 1s infinite;*/
 /*}*/
 
+header {
+    text-align: center;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+}
 
 
 
