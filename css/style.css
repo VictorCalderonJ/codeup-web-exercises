@@ -1,83 +1,83 @@
-/*:root {*/
-/*    --primary: red;*/
-/*    --secondary: blue;*/
-/*}*/
+:root {
+    --primary: red;
+    --secondary: blue;
+}
 
 
 
-/*.fancy-header {*/
-/*    color: var(--primary);*/
-/*}*/
-/*body {*/
-/*    background-color: lightblue;*/
-/*}*/
+.fancy-header {
+    color: var(--primary);
+}
+body {
+    background-color: lightblue;
+}
 
-/*.bubble-text-box {*/
-/*    background-color: white;*/
-/*    border-radius: 10px;*/
-/*    padding: 10px;*/
-/*    display: inline-block;*/
-/*}*/
+.bubble-text-box {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    display: inline-block;
+}
 
-/*.ani {*/
-/*    animation-duration: 3s;*/
-/*    animation-name: slideIn;*/
-/*}*/
+.ani {
+    animation-duration: 3s;
+    animation-name: slideIn;
+}
 
-/*@keyframes slideIn {*/
-/*    from {*/
-/*        margin-left: 100%;*/
-/*        width: 300%;*/
-/*    }*/
+@keyframes slideIn {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
 
-/*    75% {*/
-/*        font-size: 300%;*/
-/*        margin-left: 25%;*/
-/*        width: 150%;*/
-/*    }*/
+    75% {
+        font-size: 300%;
+        margin-left: 25%;
+        width: 150%;
+    }
 
-/*    to {*/
-/*        margin-left: 0;*/
-/*        width: 100%;*/
-/*    }*/
-/*}*/
+    to {
+        margin-left: 0;
+        width: 100%;
+    }
+}
 
-/*.button {*/
-/*    display: inline-block;*/
-/*    padding: 10px 20px;*/
-/*    background-color: #4CAF50;*/
-/*    color: white;*/
-/*    border: none;*/
-/*    text-align: center;*/
-/*    text-decoration: none;*/
-/*    font-size: 16px;*/
-/*    cursor: pointer;*/
-/*    transition: background-color 0.3s ease;*/
-/*}*/
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 
-/*.button:hover {*/
-/*    background-color: #45a049;*/
-/*}*/
+.button:hover {
+    background-color: #45a049;
+}
 
-/*.button:active {*/
-/*    background-color: #3e8e41;*/
-/*}*/
+.button:active {
+    background-color: #3e8e41;
+}
 
-/*@keyframes buttonPulse {*/
-/*    0% {*/
-/*        transform: scale(1);*/
-/*    }*/
-/*    50% {*/
-/*        transform: scale(1.1);*/
-/*    }*/
-/*    100% {*/
-/*        transform: scale(1);*/
-/*    }*/
-/*}*/
+@keyframes buttonPulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
 
-/*.button.animated {*/
-/*    animation: buttonPulse 1s infinite;*/
-/*}*/
+.button.animated {
+    animation: buttonPulse 1s infinite;
+}
 
 header {
     text-align: center;
