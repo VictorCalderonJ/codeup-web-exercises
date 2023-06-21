@@ -150,28 +150,34 @@
 //
 
 
-function sumIsEqual(x, y, z){
-    if(x + y == z) {
-        return true
-    } else {
-        return false
-    }
+// function sumIsEqual(x, y, z){
+//     if(x + y == z) {
+//         return true
+//     } else {
+//         return false
+//     }
+// }
+//
+// console.log(sumIsEqual(1, 2, 3), true); // returns true
+// console.log(sumIsEqual(2, 2, 4), true); // returns true
+// console.log(sumIsEqual(10, 2, 12), true); // returns true
+// console.log(sumIsEqual(10, false, 12), false); // returns false
+// console.log(sumIsEqual('10', '2', 12), false); // returns false
+// console.log(sumIsEqual('fred', 'bob', 'hello'), false); // returns false
+//
+//
+//
+// const xvalue= parseInt(prompt(`what is the value of x?`))
+// console.log(`the user input ${xvalue}`)
+// const yvalue = parseInt(prompt(`what is the value of y?`))
+// console.log(`the user input ${yvalue}`)
+// const zvalue = parseInt(prompt(`what is the value of z`))
+// console.log(`The user input ${zvalue}`)
+//
+// console.log(sumIsEqual(xvalue, yvalue, zvalue))
+
+
+function returnProduct(x, y ,z) {
+    return x * y * z
 }
 
-console.log(sumIsEqual(1, 2, 3), true); // returns true
-console.log(sumIsEqual(2, 2, 4), true); // returns true
-console.log(sumIsEqual(10, 2, 12), true); // returns true
-console.log(sumIsEqual(10, false, 12), false); // returns false
-console.log(sumIsEqual('10', '2', 12), false); // returns false
-console.log(sumIsEqual('fred', 'bob', 'hello'), false); // returns false
-
-
-
-const xvalue= parseInt(prompt(`what is the value of x?`))
-console.log(`the user input ${xvalue}`)
-const yvalue = parseInt(prompt(`what is the value of y?`))
-console.log(`the user input ${yvalue}`)
-const zvalue = parseInt(prompt(`what is the value of z`))
-console.log(`The user input ${zvalue}`)
-
-console.log(sumIsEqual(xvalue, yvalue, zvalue))
