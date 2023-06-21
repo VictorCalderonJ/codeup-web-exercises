@@ -177,7 +177,17 @@
 // console.log(sumIsEqual(xvalue, yvalue, zvalue))
 
 
-function returnProduct(x, y ,z) {
-    return x * y * z
-}
-
+// function returnProduct(x) {
+// let product = 1
+//     for (let num of num){
+//         product *= num;
+//     }
+//     // for (let i = o; i < nums.length; i += 1){
+//     // product *= nums[i]
+// }
+//
+// console.log(returnProduct([1, 2, 3])); // returns 1 * 2 * 3 = 6
+// console.log(returnProduct([3, 3, 3])); // returns 3 * 3 * 3 = 27
+// console.log(returnProduct([4, 1, 2])); // returns 4 * 1 * 2 = 8
+// console.log(returnProduct([4, 0, 2])); // returns 4 * 0 * 2 = 0
+// console.log(returnProduct([5, 3, 2])); // returns 5 * 3 * 2 = 30

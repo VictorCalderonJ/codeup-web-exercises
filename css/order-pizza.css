@@ -1,0 +1,42 @@
+.container-fluid.vc-hero {
+    min-height: 30vh;
+    background-image: url("../img/gino-piz.webp");
+    background-position: center center;
+    background-size: cover;
+}
+.vc-margin {
+    margin: 6px;
+}
+
+.custom1-card {
+    margin-bottom: 40px; /* Add margin-bottom to create spacing between cards */
+    /* Add any additional styles as needed */
+}
+
+
+.gray-card {
+    background-color: #f0f0f0; /* Gray background color */
+    padding: 20px; /* Adjust padding as needed */
+}
+.vc1-margin {
+    margin-left: 6px;
+    margin-bottom: unset;
+    padding: 2px;
+}
+
+.background-color {
+    background-color: #5e5e5e;
+}
+.custom-card-header {
+    background-color: #f0f0f0; /* Gray background color */
+    padding: 10px; /* Adjust padding as needed */
+    /* Add any additional styles as needed */
+}
+
+.test-1 {
+    margin-left: unset;
+}
+
+.card {
+    --bs-card-spacer-y: unset;
+}
