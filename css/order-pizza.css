@@ -40,3 +40,7 @@
 .card {
     --bs-card-spacer-y: unset;
 }
+
+.smaller-card {
+    margin: 20px; /* Add spacing between the smaller cards if desired */
+}
