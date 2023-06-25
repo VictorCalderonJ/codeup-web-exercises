@@ -66,10 +66,65 @@
                         </div>
                     </div>
                 </div>
-            </div> exc
+            </div>
         </div>
                 </div>
-                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">hi</div>
+                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+
+                    <div class="tab-content">
+                        <div class="" tabindex="0">
+
+                            <div class="card custom-main-card mb-3">
+                                <div class="card-header bg-primary text-white">Choose Cheese and Sauce</div>
+                                <div class="card-body">
+                                    <div class="card custom1-card mb-3 smaller-card">
+                                        <div class="card-header custom-card-header vc1-margin test-1">Cheese</div>
+                                        <div class="card-body">
+                                            <p class="vc1-margin">How much?</p>
+                                            <hr class="my-2">
+                                            <div class="dropdown">
+                                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="cheeseDropdown">
+                                                    Select Cheese
+                                                </button>
+                                                <ul class="dropdown-menu" style="background-color: white;">
+                                                    <li><a class="dropdown-item" href="#">Light</a></li>
+                                                    <li><a class="dropdown-item" href="#">Normal</a></li>
+                                                    <li><a class="dropdown-item" href="#">Extra</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card custom1-card mb-3 smaller-card">
+                                        <div class="card-header custom-card-header vc1-margin test-1">Hand Tossed</div>
+                                        <div class="card-body">
+                                            <p class="vc1-margin">Garlic season crust with a rich buttery taste</p>
+                                            <hr class="my-2">
+                                            <div class="form-check vc-margin">
+                                                <input class="form-check-input" type="radio" name="choice" id="option3" value="option3" required>
+                                                <label class="form-check-label" for="option3">Small (10")</label>
+                                            </div>
+                                            <hr class="my-1">
+                                            <div class="form-check vc-margin">
+                                                <input class="form-check-input" type="radio" name="choice" id="option4" value="option4" required>
+                                                <label class="form-check-label" for="option4">Medium (12")</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <script>
+                                // Update the cheese dropdown button text when an option is selected
+                                document.querySelectorAll('.dropdown-item').forEach(function(item) {
+                                    item.addEventListener('click', function() {
+                                        document.getElementById('cheeseDropdown').textContent = this.textContent;
+                                    });
+                                });
+                            </script>
+
+
+
+                        </div>
                 <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">...</div>
             </div>
         </div>
