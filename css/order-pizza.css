@@ -44,3 +44,15 @@
 .smaller-card {
     margin: 20px; /* Add spacing between the smaller cards if desired */
 }
+
+.custom-button.dropdown-text {
+    background-color: white;
+    color: black;
+    width: 97%; /* Adjust the width as needed */
+    margin-left: 10px;
+    margin-bottom: 7px; /* Adjust the margin-top as needed */
+}
+
+.dropdown-left .dropdown-toggle {
+    text-align: left;
+}

@@ -191,3 +191,56 @@
 // console.log(returnProduct([4, 1, 2])); // returns 4 * 1 * 2 = 8
 // console.log(returnProduct([4, 0, 2])); // returns 4 * 0 * 2 = 0
 // console.log(returnProduct([5, 3, 2])); // returns 5 * 3 * 2 = 30
+
+// Create a function, returnTotalSales, that takes in an array of sales data objects and returns the sum of all
+// totalItemsSold properties. Assume all elements in the input array are valid sales data objects with a totalItemsSold
+// property.
+//
+//     EXAMPLE...
+
+const salesData = [
+    {
+        month: 'January',
+        totalItemsSold: 0
+    },
+    {
+        month: 'February',
+        totalItemsSold: 5
+    },
+    {
+        month: 'March',
+        totalItemsSold: 2
+    },
+    {
+        month: 'April',
+        totalItemsSold: 10
+    },
+    {
+        month: 'May',
+        totalItemsSold: 30
+    }
+];
+
+function returnTotalSales(salesData){
+    let sum = 0
+
+   for (let i = 0; i < salesData.length; i += 1) {
+       sum += salesData[i].totalItemsSold;
+   }
+   return sum
+}
+
+
+
+console.log(salesData[0].totalItemsSold)
+console.log(returnTotalSales(salesData)); // returns 47
+
+
+
+
+
+
+
+
+
+
