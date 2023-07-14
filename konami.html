@@ -1,35 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Konami Code</title>
-  <script src="js/jquery.js"></script>
+    <title>Konami Code</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 <body>
-<div class="page-wrapper">
-  <div class="container">
-    <div class="row">
-      <div class="column">
-<!--        <h1>Konami Code</h1>-->
+<h1>Konami Code</h1>
 
-        <script src="/js/jquery.js"></script>
+<script src="/js/jquery.js"></script>
+<script>
+    "use strict";
 
-        <script>
-          "use strict";
+    $(document).keyup(function(event){
+        console.log(event.keyCode);
+    });
 
-          $(document).keyup(function(event){
-            console.log(event.keyCode);
-          });
-        </script>
+    // let konamiCode = ["ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown", "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight", "b", "a"];
+    // let konamiIndex = 0;
+    //
+    // $(document).keydown(function(event) {
+    //     // Check if the pressed key matches the current position in the Konami code sequence
+    //     if (event.key === konamiCode[konamiIndex]) {
+    //         konamiIndex++;
+    //         if (konamiIndex === konamiCode.length) {
+    //             alert("Konami Code activated!");
+    //         }
+    //     } else {
+    //         // Reset the index if a key other than the expected one is pressed
+    //         konamiIndex = 0;
+    //     }
+    // });
 
-        <p>Please type something into this form:</p>
-        <form>
-          <input type="text" id="text-field" name="text-field" placeholder="Type Here"/>
-        </form>
+    let xCode = ["ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown", "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight", "b", "a"];
+    let yCode = 0;
 
-      </div>
-    </div>
-  </div>
-</div>
+    $(document).keydown(function(event) {
+        if(event.key === xCode[yCode]) {
+            yCode++;
+            if (yCode === xCode.length){
+                alert(`no`);
+                $("body").css(`background-color`, `blue`)
+            }
+        } else {
+            yCode = 0
+        }
+
+    })
+
+
+</script>
 </body>
-<script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
 </html>

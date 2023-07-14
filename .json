@@ -1,0 +1,22 @@
+[
+  {
+    "Restaurant": "Burger",
+    "Description": "Burger Description",
+    "categories": [
+      "Food"
+    ]
+  }, {
+  "Restaurant": "Pizza",
+  "Description": "Pizza Description",
+  "categories": [
+    "Food"
+  ]
+},
+  {
+    "Restaurant": "Tacos",
+    "Description": "Tacos Description",
+    "categories": [
+      "Food"
+    ]
+  }
+]
