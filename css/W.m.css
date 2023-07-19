@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* Set the body background color to white */
+}
+
+.header {
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    flex-basis: calc(50% - 20px); /* Two cards per row, adjust as needed */
+    margin: 10px; /* Adjust the margin between cards */
+    overflow: hidden;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.card-content input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.forecast-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjust as needed */
+}
+
+.forecast-card {
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+}
+
+/* Your existing styles for the map and sidebar */
+#map {
+    width: 100%;
+    text-align: center;
+    height: 15rem;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+    padding: 50px;
+    color: #FFF;
+    text-shadow: 1px 1px 1px #333;
+    border-radius: 2rem;
+}
+
+.sidebar {
+    background-color: rgba(0, 0, 0, 0.89);
+}
+
+/* Media query to adjust the forecast cards when the screen size is reduced */
+@media screen and (max-width: 768px) {
+    .card {
+        flex-basis: 100%; /* Display one card per row on smaller screens */
+    }
+}

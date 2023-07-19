@@ -6,6 +6,10 @@
     //       HINT: Your data should come back as a JSON object; use console.log() to inspect
     //             its contents and fields
     //       HINT: You will want to target #insertProducts for your new HTML elements
+    function loadInventory(){
+
+    }
+
     $.ajax('/inventory.json')
         .done((data) => {
             console.log(data)
@@ -18,7 +22,7 @@
                 <td>${InventoryItems[i].title}</td>
                 <td>${InventoryItems[i].quantity}</td>
                 <td>${InventoryItems[i].price}</td>
-                <td>${InventoryItems[i].categories}</td>
+                <td>${InventoryItems[i].categories.join(`, `)}</td>
             </tr>
             `)
         }
@@ -29,5 +33,6 @@
         // </tr>
         // </tbody>`)
     }
+
 
 })();
