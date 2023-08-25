@@ -1,5 +1,3 @@
-// noinspection JSVoidFunctionReturnValueUsed
-
 $(() => {
     const map = initializeMap();
     let userLocationText = document.getElementById('userLocation');
@@ -35,7 +33,7 @@ $(() => {
         if (marker) {
             marker.remove(); // Remove the existing marker if it exists
         }
-        marker = new mapboxgl.Marker({ draggable: true })
+        marker = new mapboxgl.Marker({draggable: true})
             .setLngLat(lngLat)
             .addTo(map);
 
@@ -96,6 +94,12 @@ $(() => {
         });
         card.appendChild(dateElement);
 
+        let html = `
+            <div class="weather-card">
+                <p>Temperature: ${temperature}</p>
+            </div>
+        `
+
         const temperatureElement = document.createElement('p');
         temperatureElement.textContent = `Temperature: ${temperature} °C`;
         card.appendChild(temperatureElement);
@@ -139,10 +143,10 @@ $(() => {
 
                     if (latitude !== undefined && longitude !== undefined) {
                         const lngLat = [longitude, latitude];
-                        createMarker(lngLat);;
+                        createMarker(lngLat);
+                        ;
 
                         // Fetch weather data and display forecast cards (remaining code remains unchanged)
-                        const apiKey = '36d9fd8f72ad4838cff224a6a7fd75bf';
                         const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&units=metric&appid=${apiKey}`;
 
                         $.ajax(forecastUrl)

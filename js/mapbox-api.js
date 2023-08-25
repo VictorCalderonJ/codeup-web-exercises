@@ -34,7 +34,7 @@ $(() => {
 
 
     //Function
-    //initialize map
+    // initialize map
     function initializeMap(){
         mapboxgl.accessToken = MAPBOX_TOKEN;
 

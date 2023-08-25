@@ -1,0 +1,26 @@
+body {
+    background-color: #423F3E!important;
+}
+.hexagon {
+    margin: 0 auto;
+    width: 120px;
+    height: 120px;
+    background-color: rgba(23, 16, 16, 0.5);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.margin-percent {
+    margin-top: 3rem;
+}
+
+/* Center the hexagon inside each box */
+.hexagon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+

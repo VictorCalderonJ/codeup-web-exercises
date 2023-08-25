@@ -1,0 +1,46 @@
+/*background color*/
+/*body {*/
+/*    background-color: #DDE6ED;*/
+/*}*/
+.navbar {
+    height: 5rem!important;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+    background-color: rgba(43, 185, 217, 0.55) !important;
+}
+
+
+
+
+.navbar-bg-color {
+    background-color: #F6F4EB;
+    height: 80px;
+}
+
+.color-text {
+    color: #ffffff !important;
+}
+
+a.navbar-brand {
+    color: rgb(255, 255, 255) !important;
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-left: 3rem;
+}
+a.nav-item.nav-link {
+    color: white;
+}
+a.nav-item.nav-link.active {
+    color: white;
+}
+
+/* Custom CSS to align the navigation items to the right */
+.align-right {
+    margin-left: auto!important;
+    padding-right: 4rem;
+}
+
+.test {
+    color: black!important;
+    margin-top: 21px;
+    margin-left: 21px;
+}

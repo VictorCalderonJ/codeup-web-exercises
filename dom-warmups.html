@@ -3,33 +3,65 @@
 <!--1. create a file called `dom-warmups.html` (add script tags and jQuery)-->
 <!--2. add a button to the html-->
 <!--3. when the button is clicked, change the background color of the page to your favorite color-->
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>DOM Warm Ups</title>
 </head>
-<body id="body">
-<button onclick="changeColor();">Change color</button>
+<body>
+<button id="change-bg-btn">Change color!</button>
 
+<h3>The sum is: <span id="sum-output">0</span></h3>
+
+<label for="number">Number</label>
+<input id="number" type="number" name="number" min="0" max="5" value="0">
+<button id="add-btn">Add</button>
+
+<script
+        src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
 <script>
-    let colors = ["red", "blue", "green"];
-  let colorIndex = 0;
-  function changeColor() {
-      let col = document.getElementById("body");
-      if( colorIndex >= colors.length ) {
-        colorIndex = 0;
-    }
-      col.style.backgroundColor = colors[colorIndex];
-      colorIndex++;
-  }
+    "use strict";
+
+    const favColor = 'lime';
+    //
+    // // Vanilla JS Version
+    // const changeColorBtn = document.querySelector('#change-bg-btn');
+    // const body = document.querySelector('body');
+    //
+    // changeColorBtn.addEventListener('click', () => {
+    //     body.style.background = 'gold';
+    // });
+
+    // JQUERY
+    $('#change-bg-btn').on('click', () => {
+        $('body').css('background', favColor);
+    });
+
+    // TODO: add the needed JS so that the number selected in the number input will be added to the number in
+    //  the span when the button is clicked
+
+    let NumberElected = 0
+
+    $('#add-btn').on('click', () => {
+        //allows you to know if the button is working
+        console.log(``)
+        //allows you to know what button(number) you elected
+        console.log($(`#number`).val())
+        //
+     let something  = $('#number').val()
+        const toNumber = parseInt(something)
+        NumberElected += toNumber
+        $('#sum-output').html(NumberElected);
+
+    })
+
+
+
 </script>
-
-
-
-
-
 </body>
 </html>
+
+
