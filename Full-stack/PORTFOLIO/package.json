@@ -1,6 +1,7 @@
 {
   "name": "PORTFOLIO",
   "version": "1.0.0",
-  "dependencies": {
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
   }
 }
