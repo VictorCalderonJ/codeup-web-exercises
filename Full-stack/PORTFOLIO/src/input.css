@@ -2,3 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
+img {
+    border-radius: 10rem;
+    width: 50%;
+    height: 50%;
+}
+
+.circle-bg {
+    width: 150px;
+    height: 150px;
+    background-color: #2e2e3e;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.bg-nav {
+    background: #030D15;
+}
+
+.test{
+    height: 130px;
+    width: 130px;
+}
