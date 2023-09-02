@@ -46,3 +46,13 @@ img {
     cursor: pointer;
 }
 
+.hoverE1 {
+    transition: color 0.3s ease; /* Add a 0.3-second delay to the color change */
+}
+
+.hoverE1:hover {
+    /*border: 1px solid #ffffff; !* Border color and style (solid) *!*/
+    /*border-radius: 4rem;*/
+    color: white;
+}
+
