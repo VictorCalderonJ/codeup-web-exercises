@@ -18,6 +18,11 @@ img {
     align-items: center;
 }
 
+.boxexample {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+
+}
+
 
 .bg-nav {
     background: #030D15;
@@ -31,3 +36,13 @@ img {
 .licolor{
     color: #636B73;
 }
+
+.hoverE {
+    transition: color 0.3s ease; /* Add a 0.3-second delay to the color change */
+}
+
+.hoverE:hover {
+    color: white;
+    cursor: pointer;
+}
+
