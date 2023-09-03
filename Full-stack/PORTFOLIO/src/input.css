@@ -56,3 +56,9 @@ img {
     color: white;
 }
 
+.bg-color {
+    background: #030D15;
+    width: 30%;
+    height: 100%; /* This will be 100% of the parent container's height */
+}
+
