@@ -44,6 +44,8 @@ img {
 .hoverE:hover {
     color: white;
     cursor: pointer;
+    transform: scale(1.8);
+    transition: transform 0.5s;
 }
 
 .hoverE1 {
